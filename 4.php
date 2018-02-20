@@ -23,7 +23,12 @@
 
  */
 
-	
+// 1,2
+
+	function my_function1($num1, $num2) {
+		return $num1 + $num2;
+	}
+	echo my_function1(1,2);
 ?>
 
 
