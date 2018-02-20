@@ -31,7 +31,19 @@
 
 			 */
 
-		
+		$number1 = 10;
+		$number2 = 20;
+		$sum = $number1 + $number2;
+		echo 'sum = ' . $sum . '<br>';
+
+		$array1 = array(10,20,30);
+		$array2 = array('key1' => 10, 'key2' => 20, 'key3' => 30);
+		echo 'array1[1]: ' . $array1[1] . '<br>';
+		echo 'array2[key3]: ' . $array2['key3'] . '<br>';
+
+		const MY_CONST_1 = 'PHP';
+		echo MY_CONST_1;
+
 
 
 		?>
