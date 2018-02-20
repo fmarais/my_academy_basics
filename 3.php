@@ -25,6 +25,48 @@
 
  */
 
+// 1
+$show_else = true;
+if ($show_else === false) {
+	echo 'if block';
+} elseif ($show_else === false) {
+	echo 'elseif block';
+} else {
+	echo 'I love PHP';
+}
+
+echo '<hr/>';
+
+// 2
+for ($i = 0; $i < 11; $i++) {
+	echo 'i=' . $i . ' <br>';
+}
+
+echo '<hr/>';
+
+// 3
+$switch_test = 5;
+switch ($switch_test) {
+	case 1:
+		echo 'switch=' . $switch_test;
+		break;
+	case 2:
+		echo 'switch=' . $switch_test;
+		break;
+	case 3:
+		echo 'switch=' . $switch_test;
+		break;
+	case 4:
+		echo 'switch=' . $switch_test;
+		break;
+	case 5:
+		echo 'switch=' . $switch_test;
+		break;
+	
+	default:
+		echo 'switch=default';
+		break;
+}
 	
 ?>
 
