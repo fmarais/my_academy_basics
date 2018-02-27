@@ -22,15 +22,34 @@
 
 		Step 5: Instantiate the class / create object and call it pitbull
 
-Step 6: Call the method ShowAll
-
-	
-
-		
+		Step 6: Call the method ShowAll
 	*/
 	
 	?>
 
+
+<h4>1,2,3,4,5,6</h4>
+<?php
+	class Dog {
+		private $head;
+		private $legs;
+		private $tail;
+
+		public function __construct($head, $legs, $tail) {
+			$this->head = $head;
+			$this->legs = $legs;
+			$this->tail = $tail;
+		}
+
+		public function showAll() {
+			return get_object_vars($this);
+		}
+	}
+
+	echo 'new Dog(2,3,1) <br>';
+
+	print_r ((new Dog(2,3,1))->showAll());
+?>
 
 
 

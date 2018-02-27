@@ -25,7 +25,19 @@
 
  */
 
+// 1
+echo rand(0,100);
+echo '<br>';
+
+// 2
+echo strlen('Hello world');
+echo '<br>';
 	
+// 3
+$test_array = [1,33,22,12,102,2];
+echo sort($test_array);
+echo '<br>';
+
 ?>
 
 

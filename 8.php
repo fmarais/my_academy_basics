@@ -26,7 +26,10 @@
 		Step 4 - echo the variable
 
 	*/
-	
+
+		$salt_mds5 = '$1$somethin$';
+		$var1 = 'some random text value';
+		echo 'MD5: ' . crypt($var1, $salt_mds5);
 	?>
 
 

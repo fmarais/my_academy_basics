@@ -21,8 +21,19 @@
 
  */
 
+// 1
+if (isset($_POST['submit_button'])) {
+	echo 'Your input was: ' . $_POST['text1'];
+}
+
 	
 ?>
+
+<form action="6.php" method="post">
+	<input type="text" name="text1">
+	<br>
+	<input type="submit" name="submit_button" value="click me">
+</form>
 
 
 </article><!--MAIN CONTENT-->

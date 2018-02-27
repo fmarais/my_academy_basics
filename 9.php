@@ -30,6 +30,28 @@
 	?>
 
 
+<h4>1</h4>
+<a href="9.php?param1=1&param2=2">Click Here</a>
+<br>
+<?php 
+print_r($_GET);
+?>
+
+<h4>2</h4>
+<?php 
+setcookie('cookie_name','cookie_value',time() + 60*60*24*7);
+
+if (isset($_COOKIE['cookie_name'])) {
+	echo $_COOKIE['cookie_name'];
+}
+?>
+
+<h4>3</h4>
+<?php 
+session_start();
+$_SESSION['my_session'] = 'session_value';
+echo $_SESSION['my_session'];
+?>
 
 
 
